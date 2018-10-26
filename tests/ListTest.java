@@ -54,7 +54,7 @@ class ListTest {
 
         List list2 = new List();
         list2.append(list.getBegin().getNext());
-        assertNull(list2.getBegin().getPrev());
+        assertNull(list2.getBegin().getPrev()); //Fehler
         assertNull(list2.getBegin().getNext());
     }
 
