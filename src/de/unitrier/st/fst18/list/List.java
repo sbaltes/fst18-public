@@ -13,6 +13,8 @@ public class List {
      * @param e Neues Listenelement.
      */
     public void append(Element e) {
+        e.setNext(null);
+        e.setPrev(null);
         if (begin == null) {
             begin = e;
             end = e;
