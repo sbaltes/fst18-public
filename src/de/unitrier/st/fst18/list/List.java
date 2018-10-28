@@ -40,8 +40,7 @@ public class List {
      * Füge die Elemente aus der übergebenen Liste am Ende dieser Liste hinzu.
      * @param list Die Liste, deren Elemente angefügt werden sollen.
      */
-    public void append(List list)
-    {
+    public void append(List list) {
         Element e = list.getBegin();
         while (e != null) {
             Element next = e.getNext(); // append sets e.next to null
@@ -54,10 +53,8 @@ public class List {
      * Erzeuge ein neues Element pro Wert im übergebenen Array und füge die neuen Elemente am Ende der Liste hinzu.
      * @param values Array mit Double-Werten, die eingefügt werden sollen.
      */
-    public void append(double[] values)
-    {
-        for (double value : values)
-        {
+    public void append(double[] values) {
+        for (double value : values) {
             append(value);
         }
     }
@@ -66,13 +63,11 @@ public class List {
      * Erzeuge ein Array mit den Elementen aus der Liste (gleiche Reihenfolge).
      * @return Array mit Elementen der Liste (in gleicher Reihenfolge).
      */
-    public double[] asArray()
-    {
+    public double[] asArray() {
         double[] array = new double[length];
         Element element = begin;
         int arrayPos = 0;
-        while (element != null)
-        {
+        while (element != null) {
             array[arrayPos] = element.value;
             arrayPos++;
             element = element.next;
@@ -184,8 +179,7 @@ public class List {
             this.value = value;
         }
 
-        public Element getNext()
-        {
+        public Element getNext() {
             return next;
         }
 
@@ -193,8 +187,7 @@ public class List {
             this.next = next;
         }
 
-        public Element getPrev()
-        {
+        public Element getPrev() {
             return prev;
         }
 
