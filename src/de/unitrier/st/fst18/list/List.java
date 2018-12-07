@@ -1,4 +1,5 @@
 package de.unitrier.st.fst18.list;
+// AlessandroWalter
 
 /**
  * Doppelt verkettete Liste.
