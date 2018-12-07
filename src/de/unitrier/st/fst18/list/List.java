@@ -1,5 +1,5 @@
 package de.unitrier.st.fst18.list;
-
+//caflem
 /**
  * Doppelt verkettete Liste.
  */
@@ -17,7 +17,7 @@ public class List {
             begin = e;
             end = e;
             e.setNext(null);
-            e.setPrev(null);
+            e.setPrev(null); //neu
         } else {
             Element tmp = end;
             end = e;
